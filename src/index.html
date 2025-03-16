@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="timeline"></div>
+    <div id="video-preview" class="video-preview">
+      <video id="video-recorder" muted></video>
+    </div>
+    <div class="input-area">
+      <input type="text" id="text-input" placeholder="Введите сообщение">
+      <div class="record-controls">
+        <button id="audio-btn">🎤</button>
+        <button id="video-btn"></button>
+        <button id="ok-btn-record" style="display: none;">✔️</button>
+        <span id="timer" style="display: none;">00:00</span>
+        <button id="cancel-btn-record" style="display: none;">❌</button>
+      </div>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h3>Что-то пошло не так</h3>
+        <p>
+          К сожалению, нам не удалось определить ваше местоположение, пожалуйста, дайте
+          разрешение на использование геолокации, либо введите координаты вручную.
+        </p>
+        <label for="coords-input">Ширина и долгота через запятую</label>
+        <input type="text" id="coords-input" placeholder="51.50851, -0.12572">
+        <div class="modal-buttons">
+          <button id="cancel-btn">Отмена</button>
+          <button id="ok-btn">ОК</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
